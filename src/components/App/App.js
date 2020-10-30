@@ -37,7 +37,14 @@ class App extends React.Component {
   handleSubmitSong = (event) => {
     event.preventDefault();
     console.log('handleSubmitSong');
-
+    this.setState({
+      form: {
+        rank: '',
+        artist: '',
+        track: '',
+        published: '',
+      },
+    });
     this.postSong(this.state.form);
   };
 
