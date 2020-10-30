@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Header from '../Header/Header';
 
@@ -138,13 +139,13 @@ class App extends React.Component {
           </form>
 
           {this.state.errorMsg != null && <p>{this.state.errorMsg}</p>}
-          <table>
-            <thead>
+          <table className="table">
+            <thead className="thead-dark">
               <tr>
-                <th>Rank</th>
-                <th>Artist</th>
-                <th>Track</th>
-                <th>Published</th>
+                <th scope="col">Rank</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Track</th>
+                <th scope="col">Published</th>
               </tr>
             </thead>
             <tbody>
