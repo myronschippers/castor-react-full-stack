@@ -7,7 +7,7 @@ class Header extends React.Component {
     return (
       <header className="appBar">
         <img className="logo" src={logo} alt="React Logo" />
-        <h1>Git Branching</h1>
+        <h1>React Full Stack with Axios</h1>
       </header>
     );
   }
